@@ -1,9 +1,30 @@
 body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
     background-color: #dbfeb8;
 }
   
-td {
-    color: #c5edac;
+div.texto1 {
+    color: #fff3b0;
     text-align: center;
     font-family: "Sans-serif";
+    font-size: 300px;
+    font-weight: 900;
+}
+
+div.estilo1{
+    background: linear-gradient(to right, #540b0e 0%, #540b0e 65%, #335c67 65%, #335c67 100% );    
+}
+
+div.estilo2{
+    background: linear-gradient(to right, #335c67 0%, #335c67 35%, #540b0e 35%, #540b0e 100% );    
+}
+
+.header {
+    padding: 1px;    
+    background: #85bdb3;
+    color: white;
+    font-family: "Sans-serif";
+    font-size: 30px;
 }
