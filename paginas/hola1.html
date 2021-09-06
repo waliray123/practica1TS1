@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="css/estilo1.css">
+    <link rel="stylesheet" href="../css/estilo1.css">
     <title>Hola Mundo 1</title>
 <body>
     <div class="header">
         <header>
             <ul>
-                <a href="#">
+                <a href="../index.html">
                     <img src="../images/planet-earth.png" width="50" height="50">
                 </a>                            
             </ul>
         </header>        
     </div>
+    <div class="estilo3">
+        <div class="texto2" >
+            DESEAS ESCRIBIR!?
+        </div>
+    </div>
+    <div class="estilo4">
+        <div class="texto3" >            
+            PUES HAZLO            
+        </div>
+        <div class="centrar">
+            <input class="estilo1Intput" type="text" id="texto1">
+            <br>
+            <br>
+            <input type='button' onclick='mostrarTexto();'  class='estilo2Intput' value='!?'>
+        </div>
+        <br>        
+    </div>    
+    <div class="estilo5" id="respuesta">
+        <script>
+            let divR = document.getElementById('respuesta');
+            for(let i = 0;i<=10;i++){
+                let r = document.createElement("br");
+                divR.appendChild(r);
+            }
+        </script>
+    </div>
+    <div class="estilo4">
+        <?php echo "Recuerda no utilizar ningun framework!!"; ?>
+    </div> 
+    <audio id="audio1">        
+        <source src="../sonidos/enelBanco.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio, Que lastima!?, realmente no me importa.
+    </audio>
+    <script>
+        function mostrarTexto() {
+            let texto = document.getElementById('texto1').value;
+            let divRespuesta = document.getElementById('respuesta');
+            divRespuesta.textContent = '';
+            const respuesta = document.createElement("div");
+            respuesta.textContent = getRespuesta(texto);      
+            respuesta.className = 'texto3';      
+            divRespuesta.appendChild(respuesta); 
+            for(let i = 0;i<=4;i++){
+                let r = document.createElement("br");
+                divRespuesta.appendChild(r);
+            }           
+        }   
+        function getRespuesta(texto){
+            switch(texto) {
+                case 'y el dinero':
+                    reproducirAudio();
+                    return 'EN EL BANCO!!'
+                    break;  
+                case '1+1':
+                    return '3'
+                    break;
+                default:
+                    return texto
+            }
+        }           
+        function reproducirAudio(){
+            const audioElement= document.getElementById("audio1");
+            audioElement.play();
+        }          
+    </script>    
 </body>
 </html>

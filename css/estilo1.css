@@ -13,12 +13,44 @@ div.texto1 {
     font-weight: 900;
 }
 
+div.texto2 {    
+    color: #fff3b0;    
+    font-family: "Sans-serif";
+    font-size: 200px;
+    font-weight: 900;    
+    text-align: center;  
+}
+
+div.texto3 {    
+    color: #fff3b0;    
+    font-family: "Sans-serif";
+    font-size: 90px;
+    font-weight: 800;    
+    text-align: center;
+}
+
+div.centrar {
+    text-align: center;
+}
+
 div.estilo1{
     background: linear-gradient(to right, #540b0e 0%, #540b0e 65%, #335c67 65%, #335c67 100% );    
 }
 
 div.estilo2{
     background: linear-gradient(to right, #335c67 0%, #335c67 35%, #540b0e 35%, #540b0e 100% );    
+}
+
+div.estilo3{
+    background: linear-gradient(to right, #bf6535 0%, #bf6535 50%, #335c67 50%, #335c67 100% );
+}
+
+div.estilo4{
+    background-color: #335c67;
+}
+
+div.estilo5{
+    background-color: #bf6535;
 }
 
 .header {
@@ -28,3 +60,24 @@ div.estilo2{
     font-family: "Sans-serif";
     font-size: 30px;
 }
+
+input.estilo1Intput[type=text] {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;    
+}
+
+input.estilo2Intput[type=button] {
+    width: 10%;
+    padding: 12px;
+    border: 1px solid rgb(255, 255, 255);    
+    border-radius: 4px;
+    resize: vertical;  
+    font-family: "Sans-serif";  
+    font-weight: 800;  
+    
+}
+
+
